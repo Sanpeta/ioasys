@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D46FF2C7274BFFF10013CCCB /* ioasysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */; };
-		D46FF2C9274BFFF10013CCCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2C8274BFFF10013CCCB /* ContentView.swift */; };
 		D46FF2CB274BFFF30013CCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46FF2CA274BFFF30013CCCB /* Assets.xcassets */; };
 		D46FF2CE274BFFF30013CCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46FF2CD274BFFF30013CCCB /* Preview Assets.xcassets */; };
+		D46FF2DD274C10380013CCCB /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2DC274C10380013CCCB /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D46FF2C3274BFFF10013CCCB /* ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasysApp.swift; sourceTree = "<group>"; };
-		D46FF2C8274BFFF10013CCCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D46FF2CA274BFFF30013CCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D46FF2CD274BFFF30013CCCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D46FF2D9274C01860013CCCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D46FF2DC274C10380013CCCB /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +52,13 @@
 		D46FF2C5274BFFF10013CCCB /* ioasys */ = {
 			isa = PBXGroup;
 			children = (
+				D46FF2D9274C01860013CCCB /* Info.plist */,
+				D46FF2D8274C00420013CCCB /* Service */,
+				D46FF2D7274C003C0013CCCB /* Utils */,
+				D46FF2D6274C00370013CCCB /* Model */,
+				D46FF2D5274C00320013CCCB /* ViewModel */,
+				D46FF2D4274C002B0013CCCB /* View */,
 				D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */,
-				D46FF2C8274BFFF10013CCCB /* ContentView.swift */,
 				D46FF2CA274BFFF30013CCCB /* Assets.xcassets */,
 				D46FF2CC274BFFF30013CCCB /* Preview Content */,
 			);
@@ -65,6 +71,42 @@
 				D46FF2CD274BFFF30013CCCB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D46FF2D4274C002B0013CCCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D46FF2DC274C10380013CCCB /* LaunchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D46FF2D5274C00320013CCCB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D46FF2D6274C00370013CCCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D46FF2D7274C003C0013CCCB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D46FF2D8274C00420013CCCB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D46FF2C9274BFFF10013CCCB /* ContentView.swift in Sources */,
+				D46FF2DD274C10380013CCCB /* LaunchView.swift in Sources */,
 				D46FF2C7274BFFF10013CCCB /* ioasysApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +314,9 @@
 				DEVELOPMENT_TEAM = 6U8Y42QFF6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ioasys/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,9 +343,9 @@
 				DEVELOPMENT_TEAM = 6U8Y42QFF6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ioasys/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
