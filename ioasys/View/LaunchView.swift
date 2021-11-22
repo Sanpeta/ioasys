@@ -15,7 +15,7 @@ struct LaunchView: View {
     var body: some View {
         Group {
             if showLogin {
-
+                LoginView()
             } else {
                 ZStack {
                     
