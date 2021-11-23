@@ -55,7 +55,7 @@ struct HomeView: View {
                         .foregroundColor(isEditing ? .purple : .gray)
                 )
                 
-                if isEditing{
+                if isEditing {
                     VStack {
                         Image("ImageSearch")
                             .resizable()
@@ -68,14 +68,19 @@ struct HomeView: View {
                     }
                 }
                 
-                Spacer()
+                ZStack {
+                    ScrollView {
+                        EmpresasGridView()
+                    }
+                }
+                .padding(.top, 8)
                 
-                EmpresaListCell()
-            }
+            }//: VStack
             .padding(.horizontal, 16)
             .frame(width: UIScreen.main.bounds.width, alignment: .topLeading)
             .navigationBarHidden(true)
-        }
+            
+        }//: VStack
     }
 }
 
