@@ -1,5 +1,5 @@
 //
-//  CornerRadius.swift
+//  RoundedCorner.swift
 //  ioasys
 //
 //  Created by Sidnei de Souza Junior on 23/11/21.

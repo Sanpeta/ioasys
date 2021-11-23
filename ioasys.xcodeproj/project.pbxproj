@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4277469274D2F30008E52A5 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4277468274D2F30008E52A5 /* RoundedCorner.swift */; };
 		D46FF2C7274BFFF10013CCCB /* ioasysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */; };
 		D46FF2CB274BFFF30013CCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46FF2CA274BFFF30013CCCB /* Assets.xcassets */; };
 		D46FF2CE274BFFF30013CCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46FF2CD274BFFF30013CCCB /* Preview Assets.xcassets */; };
@@ -14,9 +15,12 @@
 		D46FF2DF274C238B0013CCCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2DE274C238B0013CCCB /* LoginView.swift */; };
 		D46FF2E4274C334C0013CCCB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2E3274C334C0013CCCB /* CustomTextField.swift */; };
 		D46FF2E6274C39930013CCCB /* CustomMiniText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2E5274C39930013CCCB /* CustomMiniText.swift */; };
+		D46FF2ED274C65C30013CCCB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2EC274C65C30013CCCB /* HomeView.swift */; };
+		D46FF2F0274C7ECB0013CCCB /* EmpresaListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2EF274C7ECB0013CCCB /* EmpresaListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4277468274D2F30008E52A5 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		D46FF2C3274BFFF10013CCCB /* ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasysApp.swift; sourceTree = "<group>"; };
 		D46FF2CA274BFFF30013CCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		D46FF2DE274C238B0013CCCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D46FF2E3274C334C0013CCCB /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D46FF2E5274C39930013CCCB /* CustomMiniText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMiniText.swift; sourceTree = "<group>"; };
+		D46FF2EC274C65C30013CCCB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D46FF2EF274C7ECB0013CCCB /* EmpresaListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresaListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4277465274D2D1C008E52A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D46FF2BA274BFFF10013CCCB = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +73,12 @@
 			children = (
 				D46FF2D9274C01860013CCCB /* Info.plist */,
 				D46FF2E9274C53140013CCCB /* Modifier */,
+				D4277465274D2D1C008E52A5 /* Extensions */,
 				D46FF2D8274C00420013CCCB /* Service */,
 				D46FF2D7274C003C0013CCCB /* Utils */,
-				D46FF2D6274C00370013CCCB /* Model */,
-				D46FF2D5274C00320013CCCB /* ViewModel */,
-				D46FF2D4274C002B0013CCCB /* View */,
+				D46FF2D6274C00370013CCCB /* Models */,
+				D46FF2D5274C00320013CCCB /* ViewModels */,
+				D46FF2D4274C002B0013CCCB /* Views */,
 				D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */,
 				D46FF2CA274BFFF30013CCCB /* Assets.xcassets */,
 				D46FF2CC274BFFF30013CCCB /* Preview Content */,
@@ -80,33 +94,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		D46FF2D4274C002B0013CCCB /* View */ = {
+		D46FF2D4274C002B0013CCCB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D46FF2EE274C7EA90013CCCB /* Cells */,
 				D46FF2E0274C299E0013CCCB /* Components */,
 				D46FF2DC274C10380013CCCB /* LaunchView.swift */,
 				D46FF2DE274C238B0013CCCB /* LoginView.swift */,
+				D46FF2EC274C65C30013CCCB /* HomeView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		D46FF2D5274C00320013CCCB /* ViewModel */ = {
+		D46FF2D5274C00320013CCCB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		D46FF2D6274C00370013CCCB /* Model */ = {
+		D46FF2D6274C00370013CCCB /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D46FF2D7274C003C0013CCCB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D4277468274D2F30008E52A5 /* RoundedCorner.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -132,6 +149,14 @@
 			children = (
 			);
 			path = Modifier;
+			sourceTree = "<group>";
+		};
+		D46FF2EE274C7EA90013CCCB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D46FF2EF274C7ECB0013CCCB /* EmpresaListCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,10 +230,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D46FF2E4274C334C0013CCCB /* CustomTextField.swift in Sources */,
+				D4277469274D2F30008E52A5 /* RoundedCorner.swift in Sources */,
 				D46FF2DF274C238B0013CCCB /* LoginView.swift in Sources */,
 				D46FF2E6274C39930013CCCB /* CustomMiniText.swift in Sources */,
+				D46FF2ED274C65C30013CCCB /* HomeView.swift in Sources */,
 				D46FF2DD274C10380013CCCB /* LaunchView.swift in Sources */,
 				D46FF2C7274BFFF10013CCCB /* ioasysApp.swift in Sources */,
+				D46FF2F0274C7ECB0013CCCB /* EmpresaListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
