@@ -34,6 +34,7 @@ struct LaunchView: View {
                         .scaledToFit()
                         .frame(width: 150, height: 57, alignment: .center)
                         .opacity(showLogo)
+                        .offset(y: -6)//Apenas para passar a sensação de que a transição de tela é continua
                         
                 }
             }
