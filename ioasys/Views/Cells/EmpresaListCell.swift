@@ -14,21 +14,22 @@ struct EmpresaListCell: View {
                 ZStack {
                     Image("Background")
                         .resizable()
-                        .frame(width: 130, height: 70, alignment: .center)
+                        .frame(width: 140, height: 70, alignment: .center)
                         .clipShape(RoundedCorner(radius: 20, corners: [.topLeft, .topRight]))
                     
                     Image("mcPequeno")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 90, height: 100, alignment: .center)
+                        .frame(width: 90, height: 140, alignment: .center)
                         .clipShape(RoundedCorner(radius: 10, corners: [.topLeft, .topRight]))
                 }
                 .frame(height: 70)
 
                 Text("McDonald's")
-                    .font(.system(size: 12, weight: .semibold, design: .default))
+//                    .font(.system(size: 13, weight: .semibold, design: .default))
+                    .font(Font.custom("Gilroy-Light", size: 13))
                     .foregroundColor(.gray)
-                    .frame(width: 130, height: 30)
+                    .frame(width: 140, height: 30)
                     .background(.white)
                     .clipShape(RoundedCorner(radius: 20, corners: [.bottomLeft, .bottomRight]))
 
