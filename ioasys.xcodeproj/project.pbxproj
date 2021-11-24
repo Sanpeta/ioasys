@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		D4277469274D2F30008E52A5 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4277468274D2F30008E52A5 /* RoundedCorner.swift */; };
 		D427746B274D3979008E52A5 /* EmpresasGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D427746A274D3979008E52A5 /* EmpresasGridView.swift */; };
+		D427746D274D9623008E52A5 /* EmpresaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D427746C274D9623008E52A5 /* EmpresaView.swift */; };
+		D4277471274DD0E1008E52A5 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4277470274DD0E1008E52A5 /* KeyboardHandler.swift */; };
+		D4277475274DDC40008E52A5 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4277473274DDC40008E52A5 /* Gilroy-ExtraBold.otf */; };
+		D4277476274DDC40008E52A5 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4277474274DDC40008E52A5 /* Gilroy-Light.otf */; };
 		D46FF2C7274BFFF10013CCCB /* ioasysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */; };
 		D46FF2CB274BFFF30013CCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46FF2CA274BFFF30013CCCB /* Assets.xcassets */; };
 		D46FF2CE274BFFF30013CCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46FF2CD274BFFF30013CCCB /* Preview Assets.xcassets */; };
@@ -23,6 +27,10 @@
 /* Begin PBXFileReference section */
 		D4277468274D2F30008E52A5 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		D427746A274D3979008E52A5 /* EmpresasGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresasGridView.swift; sourceTree = "<group>"; };
+		D427746C274D9623008E52A5 /* EmpresaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresaView.swift; sourceTree = "<group>"; };
+		D4277470274DD0E1008E52A5 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		D4277473274DDC40008E52A5 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		D4277474274DDC40008E52A5 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
 		D46FF2C3274BFFF10013CCCB /* ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasysApp.swift; sourceTree = "<group>"; };
 		D46FF2CA274BFFF30013CCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +62,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D4277472274DDC19008E52A5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D4277473274DDC40008E52A5 /* Gilroy-ExtraBold.otf */,
+				D4277474274DDC40008E52A5 /* Gilroy-Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D46FF2BA274BFFF10013CCCB = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +93,7 @@
 				D46FF2D9274C01860013CCCB /* Info.plist */,
 				D46FF2E9274C53140013CCCB /* Modifier */,
 				D4277465274D2D1C008E52A5 /* Extensions */,
+				D4277472274DDC19008E52A5 /* Fonts */,
 				D46FF2D8274C00420013CCCB /* Service */,
 				D46FF2D7274C003C0013CCCB /* Utils */,
 				D46FF2D6274C00370013CCCB /* Models */,
@@ -104,6 +122,7 @@
 				D46FF2DC274C10380013CCCB /* LaunchView.swift */,
 				D46FF2DE274C238B0013CCCB /* LoginView.swift */,
 				D46FF2EC274C65C30013CCCB /* HomeView.swift */,
+				D427746C274D9623008E52A5 /* EmpresaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				D4277468274D2F30008E52A5 /* RoundedCorner.swift */,
+				D4277470274DD0E1008E52A5 /* KeyboardHandler.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -222,6 +242,8 @@
 			files = (
 				D46FF2CE274BFFF30013CCCB /* Preview Assets.xcassets in Resources */,
 				D46FF2CB274BFFF30013CCCB /* Assets.xcassets in Resources */,
+				D4277476274DDC40008E52A5 /* Gilroy-Light.otf in Resources */,
+				D4277475274DDC40008E52A5 /* Gilroy-ExtraBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +262,9 @@
 				D46FF2ED274C65C30013CCCB /* HomeView.swift in Sources */,
 				D46FF2DD274C10380013CCCB /* LaunchView.swift in Sources */,
 				D46FF2C7274BFFF10013CCCB /* ioasysApp.swift in Sources */,
+				D427746D274D9623008E52A5 /* EmpresaView.swift in Sources */,
 				D46FF2F0274C7ECB0013CCCB /* EmpresaListCell.swift in Sources */,
+				D4277471274DD0E1008E52A5 /* KeyboardHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
