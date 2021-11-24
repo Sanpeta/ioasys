@@ -21,14 +21,14 @@ struct HomeView: View {
                 Text("Pesquise")
                     .multilineTextAlignment(.leading)
                     .lineLimit(2)
-                    .font(.system(size: 28, weight: .semibold, design: .default))
+                    .font(Font.custom("Gilroy-ExtraBold", size: 28))
                     .padding(.top, 24)
                     .padding(.bottom, 16)
             } else {
                 Text("Pesquise por uma empresa")
                     .multilineTextAlignment(.leading)
                     .lineLimit(2)
-                    .font(.system(size: 42, weight: .semibold, design: .default))
+                    .font(Font.custom("Gilroy-ExtraBold", size: 38))
                     .padding([.leading, .top], 16)
             }
             
