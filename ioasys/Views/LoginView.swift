@@ -30,12 +30,12 @@ struct LoginView: View {
                     
                     VStack(alignment: .leading) {
                         Text("Boas vindas,")
-                            .font(.system(size: 38, weight: .bold, design: .monospaced))
+                            .font(Font.custom("Gilroy-ExtraBold", size: 42))
                             .foregroundColor(.white)
                             
                         
                         Text("Você está no Empresas.")
-                            .font(.system(size: 24, weight: .light, design: .monospaced))
+                            .font(Font.custom("Gilroy-Light", size: 24))
                             .foregroundColor(.white)
                             
                     }//: VStack
@@ -46,7 +46,7 @@ struct LoginView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     Text("Digite seus dados para continuar.")
                         .foregroundColor(.black)
-                        .font(.system(size: 16, weight: .semibold, design: .default))
+                        .font(Font.custom("Gilroy-ExtraBold", size: 15))
                         .padding(.leading, 24)
                         .padding(.top, 24)
                     
