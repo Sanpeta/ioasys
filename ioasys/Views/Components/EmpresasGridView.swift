@@ -18,7 +18,7 @@ struct EmpresasGridView: View {
         LazyVGrid(columns: items, alignment: .center, spacing: 10) {
             ForEach(0...20, id: \.self) { empresa in
                 NavigationLink {
-                    HomeView()
+                    EmpresaView()
                 } label: {
                     EmpresaListCell()
                         .padding(.top, 48)
