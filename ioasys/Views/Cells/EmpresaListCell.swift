@@ -26,7 +26,6 @@ struct EmpresaListCell: View {
                 .frame(height: 70)
 
                 Text("McDonald's")
-//                    .font(.system(size: 13, weight: .semibold, design: .default))
                     .font(Font.custom("Gilroy-Light", size: 13))
                     .foregroundColor(.gray)
                     .frame(width: 140, height: 30)
