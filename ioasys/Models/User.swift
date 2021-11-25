@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct User: Hashable, Codable {
+    let investor: Investor
+    let enterprise: Bool
+    let success: Bool
+}
+
+struct Investor: Hashable, Codable {
+    let id: Int
+    let email: String
+    let investor_name: String
+}
