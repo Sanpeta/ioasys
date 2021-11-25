@@ -63,4 +63,8 @@ class HomeViewModel: ObservableObject {
         task.resume()
     }
     
+    func filterEnterprises(name: String) -> [Enterprise] {
+        return enterprises.filter({ $0.enterprise_name.contains(name) })
+    }
+    
 }
