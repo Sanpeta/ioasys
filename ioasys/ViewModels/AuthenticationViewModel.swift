@@ -13,6 +13,7 @@ class AuthenticationViewModel: ObservableObject {
     @Published var statusLogin: Bool = false
     @Published var statusEmail = false
     @Published var statusPass = false
+    @Published var isLoading = false
     @Published var email: String = "testeapple@ioasys.com.br"   //Apenas para teste os valores
     @Published var password: String = "12341234"                //Apenas para teste os valores
     
@@ -27,6 +28,8 @@ class AuthenticationViewModel: ObservableObject {
    
     //METHODS
     func login(_ email: String, _ password: String) {
+        isLoading = true
+        
         guard let minhaUrl = NSURL(string: URL_LOGIN) else {
             return
         }
@@ -42,9 +45,9 @@ class AuthenticationViewModel: ObservableObject {
             
             if httpStatus?.statusCode == 200 {
                 //Consts
-                guard let client = httpStatus?.allHeaderFields["client"] else {return}
-                guard let uid = httpStatus?.allHeaderFields["uid"] else {return}
-                guard let accessToken = httpStatus?.allHeaderFields["access-token"] else {return}
+                guard let client = httpStatus?.allHeaderFields["client"] else {return self.isLoading = false}
+                guard let uid = httpStatus?.allHeaderFields["uid"] else {return self.isLoading = false}
+                guard let accessToken = httpStatus?.allHeaderFields["access-token"] else {return self.isLoading = false}
                 
                 //Salvando em memoria
                 UserDefaults.standard.set(client as! String, forKey: "client")
@@ -56,6 +59,7 @@ class AuthenticationViewModel: ObservableObject {
                     self.statusLogin = true
                     self.statusEmail = false
                     self.statusPass = false
+                    self.isLoading = false
                 }
                 
             } else if httpStatus?.statusCode == 401 {
@@ -64,6 +68,7 @@ class AuthenticationViewModel: ObservableObject {
                     self.statusLogin = false
                     self.statusEmail = true
                     self.statusPass = true
+                    self.isLoading = false
                 }
             }
             
