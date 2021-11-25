@@ -25,29 +25,39 @@ struct EmpresaView: View {
                     
 
                 HStack(alignment: .top, spacing: 0) {
-                    Button {
-                        self.presentationMode.wrappedValue.dismiss()
-                    } label: {
-                        Image(systemName: "arrow.backward")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 20, height: 20)
-                            .foregroundColor(.white)
-                    }
-                    .offset(x: -60, y: 10)
+                    ZStack {
+                        Button {
+                            self.presentationMode.wrappedValue.dismiss()
+                        } label: {
+                            Image(systemName: "arrow.backward")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 20, height: 20)
+                                .foregroundColor(.white)
+                        }
 
+                    }
+                    .offset(x: -30, y: 20)
+                    
+                    Spacer()
+                    
                     VStack(spacing: 4) {
                         Text(enterprise.enterprise_name)
                             .font(Font.custom("Gilroy-ExtraBold", size: 28))
+                            .lineLimit(2)
+                            .multilineTextAlignment(.center)
                             .foregroundColor(.white)
 
                         Text(enterprise.enterprise_type.enterprise_type_name)
                             .font(Font.custom("Gilroy-Light", size: 16))
                             .foregroundColor(.white)
+                            .lineLimit(1)
                     }//: VStack
                     .offset(x: -10)
+                    
+                    Spacer()
                 }//: HStack
-                .frame(width: UIScreen.main.bounds.width, height: 100, alignment: .center)
+                .frame(width: UIScreen.main.bounds.width - 100, height: 100, alignment: .center)
             }//: ZStack
             
             
@@ -77,6 +87,6 @@ struct EmpresaView: View {
 //MARK: - Preview
 //struct EmpresaView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        EmpresaView()
+//        EmpresaView(enterprise: Enterprise(id: 1, enterprise_name: "tdsaddada dsad asd asd as dasd asda s", photo: "teste", description: "teste", enterprise_type: EnterpriseType.init(id: 1, enterprise_type_name: "tesd asdasd asd asdas da da dasd ada")))
 //    }
 //}
