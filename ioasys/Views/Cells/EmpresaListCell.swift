@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct EmpresaListCell: View {
+    //MARK: - Properties
+    let enterprise: Enterprise
+    
+    //MARK: - Body
     var body: some View {
         ZStack(alignment: .top) {
             VStack(spacing: 0) {
@@ -17,15 +22,15 @@ struct EmpresaListCell: View {
                         .frame(width: 140, height: 70, alignment: .center)
                         .clipShape(RoundedCorner(radius: 20, corners: [.topLeft, .topRight]))
                     
-                    Image("mcPequeno")
+                    KFImage(URL(string: URL_IMAGE + enterprise.photo))
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 90, height: 140, alignment: .center)
+                        .frame(width: 90, height: 130, alignment: .center)
                         .clipShape(RoundedCorner(radius: 10, corners: [.topLeft, .topRight]))
                 }
                 .frame(height: 70)
 
-                Text("McDonald's")
+                Text(enterprise.enterprise_name)
                     .font(Font.custom("Gilroy-Light", size: 13))
                     .foregroundColor(.gray)
                     .frame(width: 140, height: 30)
@@ -39,9 +44,10 @@ struct EmpresaListCell: View {
     }
 }
 
-struct EmpresaListCell_Previews: PreviewProvider {
-    static var previews: some View {
-        EmpresaListCell()
+//MARK: - Preview
+//struct EmpresaListCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EmpresaListCell()
 //            .previewLayout(.sizeThatFits)
-    }
-}
+//    }
+//}
