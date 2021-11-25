@@ -25,7 +25,7 @@ struct EmpresaListCell: View {
                     KFImage(URL(string: URL_IMAGE + enterprise.photo))
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 90, height: 130, alignment: .center)
+                        .frame(width: 90, height: 120, alignment: .center)
                         .clipShape(RoundedCorner(radius: 10, corners: [.topLeft, .topRight]))
                 }
                 .frame(height: 70)
