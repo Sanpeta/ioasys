@@ -10,7 +10,7 @@ import Kingfisher
 
 struct EmpresaListCell: View {
     //MARK: - Properties
-    let enterprise: Enterprise
+    var enterprise: Enterprise
     
     //MARK: - Body
     var body: some View {
