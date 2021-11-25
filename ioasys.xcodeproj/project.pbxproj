@@ -13,6 +13,7 @@
 		D4277471274DD0E1008E52A5 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4277470274DD0E1008E52A5 /* KeyboardHandler.swift */; };
 		D4277475274DDC40008E52A5 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4277473274DDC40008E52A5 /* Gilroy-ExtraBold.otf */; };
 		D4277476274DDC40008E52A5 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D4277474274DDC40008E52A5 /* Gilroy-Light.otf */; };
+		D4631B2E274FC4500095244D /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4631B2D274FC4500095244D /* Extension+String.swift */; };
 		D46FF2C7274BFFF10013CCCB /* ioasysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */; };
 		D46FF2CB274BFFF30013CCCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46FF2CA274BFFF30013CCCB /* Assets.xcassets */; };
 		D46FF2CE274BFFF30013CCCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D46FF2CD274BFFF30013CCCB /* Preview Assets.xcassets */; };
@@ -22,6 +23,12 @@
 		D46FF2E6274C39930013CCCB /* CustomMiniText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2E5274C39930013CCCB /* CustomMiniText.swift */; };
 		D46FF2ED274C65C30013CCCB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2EC274C65C30013CCCB /* HomeView.swift */; };
 		D46FF2F0274C7ECB0013CCCB /* EmpresaListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FF2EF274C7ECB0013CCCB /* EmpresaListCell.swift */; };
+		D479BE29274E630A00521383 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479BE28274E630A00521383 /* HomeViewModel.swift */; };
+		D479BE2B274EBE6C00521383 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479BE2A274EBE6C00521383 /* User.swift */; };
+		D479BE2D274ECF4B00521383 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479BE2C274ECF4B00521383 /* AuthenticationViewModel.swift */; };
+		D479BE2F274EFC6F00521383 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479BE2E274EFC6F00521383 /* Constants.swift */; };
+		D479BE31274EFE1B00521383 /* Enterprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D479BE30274EFE1B00521383 /* Enterprise.swift */; };
+		D479BE34274F30A700521383 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D479BE33274F30A700521383 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,7 @@
 		D4277470274DD0E1008E52A5 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		D4277473274DDC40008E52A5 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
 		D4277474274DDC40008E52A5 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
+		D4631B2D274FC4500095244D /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		D46FF2C3274BFFF10013CCCB /* ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46FF2C6274BFFF10013CCCB /* ioasysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ioasysApp.swift; sourceTree = "<group>"; };
 		D46FF2CA274BFFF30013CCCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +50,11 @@
 		D46FF2E5274C39930013CCCB /* CustomMiniText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMiniText.swift; sourceTree = "<group>"; };
 		D46FF2EC274C65C30013CCCB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D46FF2EF274C7ECB0013CCCB /* EmpresaListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresaListCell.swift; sourceTree = "<group>"; };
+		D479BE28274E630A00521383 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D479BE2A274EBE6C00521383 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D479BE2C274ECF4B00521383 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		D479BE2E274EFC6F00521383 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D479BE30274EFE1B00521383 /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D479BE34274F30A700521383 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +72,7 @@
 		D4277465274D2D1C008E52A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D4631B2D274FC4500095244D /* Extension+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -130,6 +145,8 @@
 		D46FF2D5274C00320013CCCB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D479BE28274E630A00521383 /* HomeViewModel.swift */,
+				D479BE2C274ECF4B00521383 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -137,6 +154,8 @@
 		D46FF2D6274C00370013CCCB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D479BE2A274EBE6C00521383 /* User.swift */,
+				D479BE30274EFE1B00521383 /* Enterprise.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +165,7 @@
 			children = (
 				D4277468274D2F30008E52A5 /* RoundedCorner.swift */,
 				D4277470274DD0E1008E52A5 /* KeyboardHandler.swift */,
+				D479BE2E274EFC6F00521383 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -198,6 +218,9 @@
 			dependencies = (
 			);
 			name = ioasys;
+			packageProductDependencies = (
+				D479BE33274F30A700521383 /* Kingfisher */,
+			);
 			productName = ioasys;
 			productReference = D46FF2C3274BFFF10013CCCB /* ioasys.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +249,9 @@
 				Base,
 			);
 			mainGroup = D46FF2BA274BFFF10013CCCB;
+			packageReferences = (
+				D479BE32274F30A700521383 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D46FF2C4274BFFF10013CCCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,13 +280,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D479BE31274EFE1B00521383 /* Enterprise.swift in Sources */,
+				D479BE2B274EBE6C00521383 /* User.swift in Sources */,
 				D46FF2E4274C334C0013CCCB /* CustomTextField.swift in Sources */,
+				D4631B2E274FC4500095244D /* Extension+String.swift in Sources */,
 				D427746B274D3979008E52A5 /* EmpresasGridView.swift in Sources */,
 				D4277469274D2F30008E52A5 /* RoundedCorner.swift in Sources */,
 				D46FF2DF274C238B0013CCCB /* LoginView.swift in Sources */,
+				D479BE2F274EFC6F00521383 /* Constants.swift in Sources */,
 				D46FF2E6274C39930013CCCB /* CustomMiniText.swift in Sources */,
 				D46FF2ED274C65C30013CCCB /* HomeView.swift in Sources */,
+				D479BE2D274ECF4B00521383 /* AuthenticationViewModel.swift in Sources */,
 				D46FF2DD274C10380013CCCB /* LaunchView.swift in Sources */,
+				D479BE29274E630A00521383 /* HomeViewModel.swift in Sources */,
 				D46FF2C7274BFFF10013CCCB /* ioasysApp.swift in Sources */,
 				D427746D274D9623008E52A5 /* EmpresaView.swift in Sources */,
 				D46FF2F0274C7ECB0013CCCB /* EmpresaListCell.swift in Sources */,
@@ -467,6 +499,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D479BE32274F30A700521383 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D479BE33274F30A700521383 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D479BE32274F30A700521383 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D46FF2BB274BFFF10013CCCB /* Project object */;
 }
