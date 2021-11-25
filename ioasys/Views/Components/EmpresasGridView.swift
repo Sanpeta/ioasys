@@ -11,25 +11,29 @@ struct EmpresasGridView: View {
     //MARK: - Properties
     private let items = [GridItem(), GridItem()]
     private let widthScreen = UIScreen.main.bounds.width / 2
+    let enterprises: [Enterprise]
     
     
     //MARK: - Body
     var body: some View {
         LazyVGrid(columns: items, alignment: .center, spacing: 10) {
-            ForEach(0...20, id: \.self) { empresa in
+            ForEach(enterprises, id: \.self) { enterprise in
+                
+                //TODO: - VERIFICAR NO DISPOSITIVO REAL
                 NavigationLink {
-                    EmpresaView()
+                    EmpresaView(enterprise: enterprise)
                 } label: {
-                    EmpresaListCell()
+                    EmpresaListCell(enterprise: enterprise)
                         .padding(.top, 48)
-                }
+                }//: NavigationLink
             }//: ForEach
         }//: LazyVGrid
     }
 }
 
-struct EmpresasGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        EmpresasGridView()
-    }
-}
+//MARK: - Preview
+//struct EmpresasGridView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EmpresasGridView()
+//    }
+//}
