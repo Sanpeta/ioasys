@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct EmpresaView: View {
     //MARK: - Properties
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    var enterprise: Enterprise
     
     //MARK: - Body
     var body: some View {
@@ -35,11 +37,11 @@ struct EmpresaView: View {
                     .offset(x: -60, y: 10)
 
                     VStack(spacing: 4) {
-                        Text("McDonald's")
+                        Text(enterprise.enterprise_name)
                             .font(Font.custom("Gilroy-ExtraBold", size: 28))
                             .foregroundColor(.white)
-                        
-                        Text("Restaurante * Fast-food")
+
+                        Text(enterprise.enterprise_type.enterprise_type_name)
                             .font(Font.custom("Gilroy-Light", size: 16))
                             .foregroundColor(.white)
                     }//: VStack
@@ -51,14 +53,14 @@ struct EmpresaView: View {
             
             //Content
             ScrollView {
-                Image("mcGrande")
+                KFImage(URL(string: URL_IMAGE + enterprise.photo))
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height*0.30, alignment: .center)
                     .clipShape(RoundedCorner(radius: 20, corners: [.bottomLeft, .bottomRight]))
                     
                     
-                Text("      McDonald's Corporation é a maior cadeia mundial de restaurantes de fast food de hambúrguer, servindo cerca de 68 milhões de clientes por dia em 119 países através de 37 mil pontos de venda. Com sede nos Estados Unidos, a empresa começou em 1940 como uma churrascaria operada por Richard e Maurice McDonald. Em 1948, eles reorganizaram seus negócios como uma hamburgueria que usava os princípios de uma linha de produção. O empresário Ray Kroc ingressou na empresa como franquiado em 1955. ")
+                Text(enterprise.description)
                     .font(Font.custom("Gilroy-Light", size: 18))
                     .foregroundColor(Color("ColorNeutral2"))
                     .multilineTextAlignment(.leading)
@@ -72,8 +74,9 @@ struct EmpresaView: View {
     }
 }
 
-struct EmpresaView_Previews: PreviewProvider {
-    static var previews: some View {
-        EmpresaView()
-    }
-}
+//MARK: - Preview
+//struct EmpresaView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EmpresaView()
+//    }
+//}
